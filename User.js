@@ -287,7 +287,7 @@ updateContactInfo(contactID,contactInfoID,parameter,value){
             throw new ValidationError("area name should be a string");
         }
         let indexOfContact=this.findContact(contactID);
-        return this.contacts[indexOfContact].createContactInfo(city,areaName);  
+        return this.contacts[indexOfContact].updateContactInfo(contactInfoID,parameter,value)  
     }
     catch(e){
         console.log(e);
